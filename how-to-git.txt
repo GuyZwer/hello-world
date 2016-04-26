@@ -1,0 +1,69 @@
+##command for github
+	at the first stage we can acomplish the command "config"
+	we doing it becouse we want that outher people will know how 
+	make the change, so we type our name and email
+		git config -global user.name "Guy Zwerdling"
+		git config -global user.email "guy.zwerdling@gmail.com"	
+
+	we creat new repository if needed on github website
+	on the terminator go to the folder "/home/guy/Gits/git"
+	and a complish the command: 
+		git clone https://...
+		*the URL you can find on the reposetory web page
+	
+	now git creat folder in the name of the reposetory
+	pleas jump in to this folder
+	now you can write the command:
+		git status
+	
+	you will see nothing, becouse there is no file in it
+	now you can type the command:
+		git add <filename>
+			or
+		git add *
+		*this will add the all files!
+	
+	now if you acomplish the "status" command you will see the
+	file that you ceated!:]
+	
+	now you can add a commit to this change
+		git commit -m "<commit massege"
+
+	after if if you type the "status" command you will see nothing
+	we can see the logs for all commited
+		git log
+			or
+		git log --pretty=oneline
+	
+	now we want to push this change to the master origin on github
+		git push origin master
+	
+	if some one make change on the main master origin
+	we can pull the change to our enviroment
+		git pull 
+
+	if we dont want to make change on the master origin,
+	we can creat a new branch
+		git branch <branch-name>
+
+	after it we need to change our enviromant to the new branch
+		git chackout <branch-name> 
+
+	now we can make change to the new branch and after it we need to
+	push it to the github we the following command:
+		git push origin <branch-name>
+
+	to see what branch we working on we can acomplish the command:
+		git branch
+
+	if we want to marge the new branch with the master
+	we need to change our working enviroment to master
+	and after it we need to acomplish the next command:
+		git marge <branch-name>
+
+	to delete the branch we can acomplish the command
+		git branch -d <branch-name>
+		*we acomplish it ONLY ofter we marge it to master
+
+
+		  	
